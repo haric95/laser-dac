@@ -3,6 +3,8 @@ import { Simulator } from '@laser-dac/simulator';
 import { Scene, Path } from '@laser-dac/draw';
 import { Helios } from '../../packages/helios/dist';
 
+// Path map
+
 (async () => {
   const dac = new DAC();
   dac.use(new Simulator());

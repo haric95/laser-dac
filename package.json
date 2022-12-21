@@ -22,5 +22,9 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "jimp": "^0.16.2",
+    "osc": "^2.4.3"
   }
 }

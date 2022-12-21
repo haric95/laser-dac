@@ -3,6 +3,8 @@ import { Simulator } from '@laser-dac/simulator';
 import { Scene, Circle } from '@laser-dac/draw';
 import { Helios } from '../../packages/helios/dist';
 
+// circles oscillating radius
+
 (async () => {
   const dac = new DAC();
   dac.use(new Simulator());
