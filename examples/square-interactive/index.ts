@@ -23,6 +23,7 @@ wss.on('connection', function connection(ws, req) {
 
   ws.on('message', function incoming(message) {
     // TODO: should handle illegal JSON so the server can't crash...
+    // @ts-ignore
     const payload = JSON.parse(message as string);
     if (payload.type === 'MOVE') {
       console.log('Moving x/y', payload.data.x, payload.data.y);
