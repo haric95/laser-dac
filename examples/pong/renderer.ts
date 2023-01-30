@@ -1,9 +1,9 @@
 import { DAC } from '@laser-dac/core';
 import { Simulator } from '@laser-dac/simulator';
-import { EtherDream } from '@laser-dac/ether-dream';
 import { Scene, Rect } from '@laser-dac/draw';
 import { Player } from './Player';
 import { Ball } from './Ball';
+import { Helios } from '../../packages/helios/src';
 
 export const AREA_WIDTH = 0.1;
 export const AREA_HEIGHT = 0.2;
@@ -28,9 +28,7 @@ export class Renderer {
   async start() {
     const dac = new DAC();
     dac.use(new Simulator());
-    if (process.env.DEVICE) {
-      dac.use(new EtherDream());
-    }
+    dac.use(new Helios());
     await dac.start();
 
     const ball = new Ball({

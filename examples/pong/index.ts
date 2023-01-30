@@ -21,7 +21,7 @@ server.listen(PORT, function () {
 wss.on('connection', function connection(ws) {
   ws.on('message', function incoming(message) {
     // TODO: should handle illegal JSON so the server can't crash...
-    const payload = JSON.parse(message as string);
+    const payload = JSON.parse(message.toString() as string);
     if (payload.type === 'LEFT') {
       renderer.updateBottomPosition('left');
     } else if (payload.type === 'RIGHT') {

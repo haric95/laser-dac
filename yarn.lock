@@ -1825,6 +1825,11 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
+"@types/obj-file-parser@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@types/obj-file-parser/-/obj-file-parser-0.5.0.tgz#0e96cdc6828dbc18039be8e9666f3da6b6b6ef4b"
+  integrity sha512-NvpzqBxGxSn832ikf0oXNJPK1Ee+3DCyKLyQakPUVZUtg7Ax+OdQOkkEJeYSNvEjqFxbwWwd8irMcUeRZEs8kA==
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -2318,6 +2323,11 @@ bindings@^1.5.0:
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   dependencies:
     file-uri-to-path "1.0.0"
+
+binpack@~0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/binpack/-/binpack-0.1.0.tgz#bd3d0974c3f2a0446e17df4f60b55a72a205a97e"
+  integrity sha512-KcSrsGiIKgklTWweVb9XnZPWO1/rGSsK3fwR7VnbDPbLKPlkvSKd/ZrJ1W712r6HzH5u0fa/AZCftATO09x8Aw==
 
 bmp-js@^0.1.0:
   version "0.1.0"
@@ -6053,6 +6063,11 @@ oauth-sign@~0.9.0:
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
   integrity sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
 
+obj-file-parser@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/obj-file-parser/-/obj-file-parser-0.5.3.tgz#e7691bdb254d7b4fa7119c877d7a8abefb76e50b"
+  integrity sha512-lGfXQi/4BlSS9r0ISUfQoYzYS1rjr9AJ+zDp39lm8wlsqx3TAqsOOrQhSGL/2lCfv8QhSfrCq1NfLYGuw/V0Sg==
+
 object-assign@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -6157,6 +6172,20 @@ os-tmpdir@^1.0.0, os-tmpdir@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
+
+osc-js@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/osc-js/-/osc-js-2.4.0.tgz#3d86ee350eac55731eca01588d588e6a73794057"
+  integrity sha512-9cvB8m6zt/iCsmeDdFJaD4mjC8preB1Gio+NVmjT0S3qxiejTfJ8vGudyTQciL9yqQHEuINNYS5Kb94+Ceqekg==
+  dependencies:
+    ws "^8.9.0"
+
+osc-min@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/osc-min/-/osc-min-1.1.2.tgz#3dcaff10f804c39b7080cf4c10fd7a4103cd9037"
+  integrity sha512-8DbiO8ME85R75stgNVCZtHxB9MNBBNcyy+isNBXrsFeinXGjwNAauvKVmGlfRas5VJWC/mhzIx7spR2gFvWxvg==
+  dependencies:
+    binpack "~0"
 
 osc@^2.4.3:
   version "2.4.3"
@@ -8404,6 +8433,11 @@ ws@^8.2.3:
   version "8.2.3"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.2.3.tgz#63a56456db1b04367d0b721a0b80cae6d8becbba"
   integrity sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==
+
+ws@^8.9.0:
+  version "8.11.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.11.0.tgz#6a0d36b8edfd9f96d8b25683db2f8d7de6e8e143"
+  integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
 
 xhr@^2.0.1:
   version "2.6.0"

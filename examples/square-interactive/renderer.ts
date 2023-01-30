@@ -1,8 +1,8 @@
 import { DAC } from '@laser-dac/core';
 import { Simulator } from '@laser-dac/simulator';
-import { EtherDream } from '@laser-dac/ether-dream';
 import { Scene, Rect, loadIldaFile, Ilda } from '@laser-dac/draw';
 import * as path from 'path';
+import { Helios } from '../../packages/helios/dist';
 
 const horseFile = loadIldaFile(path.resolve(__dirname, './horse.ild'));
 const boomFile = loadIldaFile(path.resolve(__dirname, './boom.ild'));
@@ -49,9 +49,7 @@ export class Renderer {
   async start() {
     const dac = new DAC();
     dac.use(new Simulator());
-    if (process.env.DEVICE) {
-      dac.use(new EtherDream());
-    }
+    dac.use(new Helios());
     await dac.start();
 
     const scene = new Scene();
